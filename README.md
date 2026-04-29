@@ -2,10 +2,8 @@
 
 > Fine-tuning DistilBERT for binary sentiment classification (Positive/Negative)
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Romusthagore/Sentiment-Analysis---IMDB-Reviews)
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Python 3.9+](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
-[![Transformers](https://img.shields.io/badge/🤗-Transformers-yellow.svg)](https://huggingface.co/docs/transformers)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Romusthagore/Sentiment-Analysis---IMDB-Reviews) [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) [![Python 3.9+](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/) [![Transformers](https://img.shields.io/badge/🤗-Transformers-yellow.svg)](https://huggingface.co/docs/transformers)
+
 ## 🏆 Results
 
 | Metric | Score |
@@ -53,6 +51,8 @@ pip install -r requirements.txt
 
 # Launch Jupyter Notebook
 jupyter notebook Sentiment_Analysis_on.ipynb
+
+
 Option 3: Use the trained model directly 🚀
 python
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
