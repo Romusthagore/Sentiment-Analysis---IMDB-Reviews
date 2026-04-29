@@ -51,7 +51,7 @@ pip install -r requirements.txt
 
 # Launch Jupyter Notebook
 jupyter notebook Sentiment_Analysis_on.ipynb
-Option 3: Use the trained model directly 🚀
+### Option 3: Use the trained model directly 🚀
 python
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
@@ -71,6 +71,7 @@ def predict_sentiment(text):
 # Test it!
 print(predict_sentiment("I loved this movie!"))  # ('Positive', 0.99)
 📊 Training Details
+⚠️ Note: Training was performed on a subset of the IMDB dataset (5k samples) due to computational constraints.
 Hyperparameter	Value
 Training samples	5,000
 Evaluation samples	1,000
@@ -100,8 +101,13 @@ transformers>=4.30.0
 datasets>=2.12.0
 scikit-learn>=1.2.0
 numpy>=1.24.0
+## ⚠️ Limitations
+
+- Trained on a subset of data
+- Struggles with sarcasm and neutral reviews
+- Binary classification only
 🔮 Future Improvements
-Push model to Hugging Face Hub
+
 
 Add live demo with Gradio/Streamlit
 
@@ -115,6 +121,5 @@ This project is licensed under the MIT License — see the LICENSE file for deta
 👤 Author
 Romuald AHOMAGNON
 
-https://img.shields.io/badge/GitHub-Romusthagore-black?style=flat&logo=github
-https://img.shields.io/badge/LinkedIn-Romuald-blue?style=flat&logo=linkedin
-
+[![GitHub](https://img.shields.io/badge/GitHub-Romusthagore-black?style=flat&logo=github)](https://github.com/Romusthagore)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Romuald-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/romuald-ahomagnon/)
