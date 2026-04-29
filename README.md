@@ -51,16 +51,14 @@ pip install -r requirements.txt
 
 # Launch Jupyter Notebook
 jupyter notebook Sentiment_Analysis_on.ipynb
-
-
 Option 3: Use the trained model directly 🚀
 python
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 
-# Load model (once pushed to Hugging Face Hub)
-model = AutoModelForSequenceClassification.from_pretrained("Romusthagore/imdb-sentiment-model")
-tokenizer = AutoTokenizer.from_pretrained("Romusthagore/imdb-sentiment-model")
+# Load model (coming soon to Hugging Face Hub)
+# model = AutoModelForSequenceClassification.from_pretrained("Romusthagore/imdb-sentiment-model")
+# tokenizer = AutoTokenizer.from_pretrained("Romusthagore/imdb-sentiment-model")
 
 def predict_sentiment(text):
     inputs = tokenizer(text, return_tensors="pt", truncation=True, max_length=512)
@@ -83,11 +81,11 @@ Max sequence length	512
 Optimizer	AdamW
 Hardware	GPU (CUDA)
 📈 Training Curves
-(Add your loss/accuracy plots here)
-
 text
 Training Loss:     0.110 → Validation Loss: 0.340
 Accuracy:          0.903 → F1 Score:        0.902
+(Add your loss/accuracy plots here)
+
 📁 Repository Structure
 text
 Sentiment-Analysis---IMDB-Reviews/
@@ -116,5 +114,6 @@ This project is licensed under the MIT License — see the LICENSE file for deta
 
 👤 Author
 Romuald AHOMAGNON
-https://img.shields.io/badge/GitHub-Romusthagore-black
-https://img.shields.io/badge/LinkedIn-Romuald-blue
+
+https://img.shields.io/badge/GitHub-Romusthagore-black?style=flat&logo=github
+https://img.shields.io/badge/LinkedIn-Romuald-blue?style=flat&logo=linkedin
